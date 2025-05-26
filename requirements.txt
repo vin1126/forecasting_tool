@@ -2,4 +2,3 @@ pandas
 prophet
 matplotlib
 flask
-os
