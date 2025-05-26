@@ -6,8 +6,17 @@
 </head>
 <body>
     <h1>Upload Data for Forecast</h1>
+    
     <form action="/forecast" method="post" enctype="multipart/form-data">
-        <input type="file" name="datafile" required>
+        <label>Select a CSV file:</label><br>
+        <input type="file" name="datafile" required><br><br>
+
+        <label>Select Model:</label><br>
+        <input type="radio" id="prophet" name="model" value="prophet" checked>
+        <label for="prophet">Prophet</label><br>
+        <input type="radio" id="neural" name="model" value="neural">
+        <label for="neural">NeuralProphet</label><br><br>
+
         <input type="submit" value="Generate Forecast">
     </form>
 </body>

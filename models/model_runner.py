@@ -4,7 +4,6 @@ from prophet.diagnostics import performance_metrics
 from prophet.plot import plot_cross_validation_metric
 from prophet.diagnostics import cross_validation
 
-import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
